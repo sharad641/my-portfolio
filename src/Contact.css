@@ -1,0 +1,81 @@
+.contact-section {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 2.5px 10px; /* Reduced padding for compactness */
+    
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-info {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.contact-number {
+    font-weight: bold;
+    color: #ffcc00; /* Bright accent color for emphasis */
+}
+
+.footer-info {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-link {
+    margin: 0 10px;
+    color: #ffcc00; /* Bright accent color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #fff; /* Change color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        font-size: 0.9rem;
+    }
+
+    .footer-info {
+        font-size: 0.8rem;
+    }
+}
+
+.contact-link {
+    color: #ffcc00; /* Bright color for better contrast */
+    text-decoration: none; /* Optional: remove underline */
+    font-weight: bold; /* Make the text bold to stand out */
+}
+
+.contact-link:hover {
+    color: #ffffff; /* Change color on hover for visibility */
+    text-decoration: underline; /* Underline on hover */
+}
