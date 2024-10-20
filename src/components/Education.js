@@ -35,7 +35,7 @@ const Education = () => {
           </div>
 
           {/* High School (9th - 10th Grade) */}
-          <div className="timeline-item right">
+          <div className="timeline-item left">
             <div className="content">
               <h3>2019-2020</h3>
               <p>Bangalore High School Hoodi</p>
@@ -53,7 +53,7 @@ const Education = () => {
           </div>
 
           {/* Current Education - Engineering */}
-          <div className="timeline-item right">
+          <div className="timeline-item left">
             <div className="content">
               <h3>2023-2026</h3>
               <p>Dayanand Sagar Academy of Technology and Management Studies, Bangalore</p>

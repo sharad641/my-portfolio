@@ -8,7 +8,7 @@ const About = () => {
         <div className="about-video-container">
           <video
             className="about-video"
-            src="path_to_your_video.mp4"
+            src="video.mp4"
             type="video/mp4"
             controls // Adds play/pause controls to the video
             autoPlay

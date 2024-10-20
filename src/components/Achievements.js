@@ -32,7 +32,7 @@ const Achievements = () => {
             </div>
           </div>
 
-          <div className="timeline-item right">
+          <div className="timeline-item left">
             <div className="content">
               <h3>2020</h3>
               <p>"School 2nd topper in SSLC examinations with 90.24%"</p>
