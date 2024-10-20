@@ -1,0 +1,186 @@
+/* Section Background */
+.about-section {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 80px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+/* Container */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    gap: 50px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten the background for contrast */
+}
+
+/* Video Styling */
+.video-container {
+    flex: 1;
+}
+
+.about-video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.about-video:hover {
+    transform: scale(1.05);
+}
+
+/* Content Styling */
+.about-content {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque for better readability */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00; /* Bright accent color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Description */
+.about-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+/* Skill Item */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly brighter on hover */
+    transform: translateY(-10px);
+}
+
+.skill-icon {
+    font-size: 2rem;
+    color: #ffcc00; /* Bright accent color */
+    margin-bottom: 10px;
+}
+
+/* Button Styling and Container for Spacing */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjust this to set the gap between buttons */
+    margin-top: 20px;
+}
+
+/* Common Button Styling */
+.about-btn, .download-btn {
+    display: inline-block;
+    background-color: #ffcc00; /* Bright accent color */
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.about-btn:hover, .download-btn:hover {
+    background-color: #ffffff; /* Lighten background on hover */
+    color: #2575fc; /* Change text color to match the background */
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.about-btn:active, .download-btn:active {
+    transform: translateY(1px);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center the text */
+    }
+
+    .video-container, .about-content {
+        width: 100%; /* Make each section take full width */
+    }
+
+    .about-video {
+        margin-bottom: 30px; /* Add spacing below video */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skills vertically */
+        gap: 20px;
+    }
+
+    .about-btn, .download-btn {
+        width: 100%; /* Full width on smaller screens */
+        padding: 12px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 10px; /* Reduced padding */
+    }
+
+    .about-content {
+        padding: 10px; /* Reduce padding for mobile */
+    }
+
+    .about-btn, .download-btn {
+        padding: 10px; /* Smaller padding */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Smaller title size */
+    }
+
+    .about-description {
+        font-size: 1rem; /* Smaller text size */
+    }
+}

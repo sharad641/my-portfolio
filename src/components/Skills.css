@@ -1,0 +1,164 @@
+/* Skills Section Styling */
+.skills-section {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: white;
+  padding: 100px 20px; /* Adjusted horizontal padding */
+  text-align: center;
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Background Waves */
+.skills-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+  opacity: 0.1;
+  z-index: 1;
+  animation: wave 6s infinite ease-in-out alternate;
+  transform: rotate(30deg);
+}
+
+/* Keyframes for background animation */
+@keyframes wave {
+  0% { transform: rotate(30deg) translateY(0); }
+  100% { transform: rotate(30deg) translateY(50px); }
+}
+
+/* Section Title */
+.section-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+  animation: titleFadeIn 1.5s ease-in-out;
+}
+
+/* Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 60px; /* Increased gap for more spacing */
+  position: relative;
+  z-index: 2;
+}
+
+/* Skills Category */
+.skills-category {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  transition: transform 0.4s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  transform-style: preserve-3d;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Hover Effects */
+.skills-category:hover {
+  transform: translateY(-15px) rotateX(10deg);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Radial Gradient Animation on Hover */
+.skills-category::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.skills-category:hover::before {
+  opacity: 1;
+}
+
+/* Subtitle Styling */
+.skills-subtitle {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffcc00;
+  margin-bottom: 25px;
+  position: relative;
+  animation: fadeInUp 1.2s ease-in-out;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Skills List */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.skills-list li {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-list li:hover {
+  color: #ffcc00;
+  transform: translateX(15px);
+}
+
+/* Animations for fade-in and title appearance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes titleFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 80px 20px; /* Adjusted padding */
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .skills-grid {
+    gap: 30px; /* Reduced gap for smaller screens */
+  }
+}
