@@ -1,7 +1,7 @@
-# For all text files
+# Set default behavior to automatically normalize line endings.
 * text=auto
 
-# For specific file types
-*.js text
+# Explicitly specify file types
 *.json text
+*.js text
 *.html text

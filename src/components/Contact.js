@@ -13,7 +13,7 @@ const Contact = () => {
           <a href="https://linkedin.com/in/sharad-patil-691902259" className="social-link" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
-          <a href="https://github.com/yourusername" className="social-link" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/sharad641" className="social-link" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
         </div>

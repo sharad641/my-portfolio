@@ -40,7 +40,8 @@
 }
 
 .social-links {
-    margin-top: 15px;
+    margin-top: 5px;
+    display: flex;
 }
 
 .social-link {
@@ -48,6 +49,8 @@
     color: #ffcc00; /* Bright accent color */
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 1.5rem;
+    padding:10px;
 }
 
 .social-link:hover {

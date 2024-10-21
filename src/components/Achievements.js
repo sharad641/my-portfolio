@@ -28,14 +28,14 @@ const Achievements = () => {
           <div className="timeline-item left">
             <div className="content">
               <h3>2018</h3>
-              <p>In Government School Nandgur, my 9 songs were selected and published in the book "ANKURA"</p>
+              <p>In Government School Nandgur, I had 9 of my songs selected and published in the book "ANKURA." Overall, I have written a total of 35 songs, And several stories.</p>
             </div>
           </div>
 
           <div className="timeline-item left">
             <div className="content">
               <h3>2020</h3>
-              <p>"School 2nd topper in SSLC examinations with 90.24%"</p>
+              <p>"I achieved the distinction of being the 2nd topper in the SSLC examinations with a score of 90.24%. This accomplishment was particularly challenging as I studied in a government school."</p>
             </div>
           </div>
 

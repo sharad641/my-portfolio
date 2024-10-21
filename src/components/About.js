@@ -11,7 +11,7 @@ const About = () => {
             controls 
             muted 
             onClick={(e) => e.target.paused ? e.target.play() : e.target.pause()} // Toggle play/pause on click
-            src="video.mp4" // Update this to your video file location
+            src="./video.mp4" // Update this to your video file location
           >
             Your browser does not support the video tag.
           </video>
@@ -23,7 +23,7 @@ const About = () => {
             I'm <strong>Sharad Patil</strong>, a creative and passionate web developer with a deep interest in crafting visually stunning and highly functional websites.
           </p>
           <p className="about-description">
-            With Good in <strong>React, Node.js, MongoDB</strong>, and other modern technologies, I aim to deliver top-tier solutions that not only work seamlessly but also stand out in terms of design.
+            With expertise in <strong>React, Node.js, MongoDB</strong>, and other modern technologies, I aim to deliver top-tier solutions that not only work seamlessly but also stand out in terms of design.
           </p>
           <div className="skills-container">
             <div className="skill-item">
