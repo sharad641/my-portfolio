@@ -62,7 +62,7 @@
 
 /* Hamburger Menu for Mobile */
 .hamburger {
-  display: none;
+  display: none; /* Hidden by default */
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
@@ -93,11 +93,11 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .header {
-    padding: 5px 0; /* Reduced padding for mobile */
+    padding: 5px 0; /* Further reduced padding for mobile */
   }
 
   .navbar {
-    flex-direction: row; /* Horizontal layout */
+    flex-direction: row; /* Maintain row layout */
     padding: 0 10px; /* Further reduced horizontal padding */
   }
 
@@ -106,18 +106,18 @@
     font-size: 1.6rem; /* Smaller logo size for mobile */
   }
 
-  /* Adjust navigation link styles for mobile */
+  /* Navigation Links for Mobile */
   .nav-links {
     position: fixed;
-    top: 60px; /* Adjusted for smaller header */
+    top: 60px; /* Position below the header */
     right: 0;
-    height: 60vh; /* Fullscreen height */
-    width: 75%; /* Wider than before */
+    height: calc(100vh - 60px); /* Fullscreen height minus header */
+    width: 75%; /* Adjust width for better usability */
     background: rgba(36, 37, 42, 0.95);
     backdrop-filter: blur(10px);
     flex-direction: column;
-    justify-content: center;
-    gap: 30px; /* Increased gap for better spacing */
+    justify-content: flex-start; /* Align items at the top */
+    gap: 20px; /* Adjusted gap for better spacing */
     transform: translateX(100%); /* Initially hidden */
     transition: transform 0.3s ease-in-out;
     z-index: 999;
@@ -134,7 +134,7 @@
 
   .nav-links ul {
     flex-direction: column;
-    gap: 40px; /* Adjusted gap for mobile */
+    gap: 30px; /* Adjusted gap for mobile */
   }
 
   .hamburger {
