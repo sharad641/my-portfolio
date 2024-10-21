@@ -1,71 +1,71 @@
-/* Section Styling */
+/* Certifications Section */
 .certifications-section {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    padding: 80px 20px;
-    text-align: center;
-    color: white;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  padding: 100px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-/* Section Title */
-.section-title {
-    font-size: 2.5rem;
-    color: #ffcc00;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.certifications-title {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-/* Certifications Container */
+/* Certification Boxes */
 .certifications-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-/* Certification Item */
 .certification-item {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    width: 100%;
-    max-width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  width: 300px; /* Increased size */
+  height: 400px; /* Increased height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.certification-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 .certification-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-10px);
 }
 
-/* Certification Image */
-.certification-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Certification Title */
 .certification-title {
-    margin-top: 15px;
-    font-size: 1.2rem;
-    color: #ffcc00;
+  font-size: 1.5rem;
+  color: #ffcc00;
+  margin-top: 20px;
 }
 
-/* Responsive Design for Smaller Screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .certifications-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .certifications-container {
+    flex-direction: column;
+  }
 
-    .certification-item {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
+  .certification-item {
+    width: 90%;
+    height: auto; /* Adjust height for smaller screens */
+  }
 }
