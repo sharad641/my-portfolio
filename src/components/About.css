@@ -21,7 +21,7 @@
     gap: 50px;
     border-radius: 15px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.1); /* Lighten the background for contrast */
+    background-color: rgba(255, 255, 255, 0.1); /* Lightened background for contrast */
 }
 
 /* Video Styling */
@@ -46,14 +46,14 @@
     flex: 1;
     text-align: left;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque for better readability */
+    background-color: rgba(255, 255, 255, 0.2); /* More opaque for better readability */
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* Section Title */
 .section-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #ffcc00; /* Bright accent color */
     margin-bottom: 20px;
@@ -88,11 +88,11 @@
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
-    color:#020000;
+    color: #333; /* Ensure readable color */
 }
 
 .skill-item:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Slightly brighter on hover */
+    background-color: rgba(255, 255, 255, 0.3); /* Brighter on hover */
     transform: translateY(-10px);
 }
 
@@ -138,7 +138,6 @@
 
 .about-btn:active, .download-btn:active {
     transform: translateY(1px);
-    
 }
 
 /* Responsive Design for Smaller Screens */
@@ -149,7 +148,7 @@
     }
 
     .video-container, .about-content {
-        width: 100%; /* Make each section take full width */
+        width: 100%; /* Full width for each section */
     }
 
     .about-video {
@@ -164,15 +163,14 @@
     .about-btn, .download-btn {
         width: 90%; /* Full width on smaller screens */
         padding: 15px;
-        margin:5px;
-        text-align: center;
+        margin: 5px;
     }
 }
 
 /* Mobile Screens */
 @media (max-width: 768px) {
     .about-container {
-        padding: 10px; /* Reduced padding */
+        padding: 10px; /* Reduce padding */
     }
 
     .about-content {
@@ -184,9 +182,10 @@
     }
 
     .section-title {
-        font-size: 2rem; /* Smaller title size */
+        font-size: 1.5rem; /* Adjust title size */
     }
 
     .about-description {
-        font-size: 1rem; /* Smaller text size */
+        font-size: 1rem; /* Adjust text size */
     }
+}
