@@ -7,9 +7,9 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
+import Certifications from './components/Certifications'; // Import Certifications component
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 
 function App() {
   useEffect(() => {
@@ -34,6 +34,9 @@ function App() {
         </section>
         <section id="achievements">
           <Achievements />
+        </section>
+        <section id="certifications"> {/* New Certifications Section */}
+          <Certifications />
         </section>
         <section id="contact">
           <Contact />
