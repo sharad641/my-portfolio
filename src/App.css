@@ -13,6 +13,7 @@ body {
   background-attachment: fixed; /* Fixed background for a parallax effect */
   color: #fff; /* Default text color */
   min-height: 100vh; /* Ensure it covers full height */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Main container for layout */
@@ -49,6 +50,11 @@ a:hover {
   text-decoration: underline; /* Underline on hover */
 }
 
+/* Navigation Styles */
+.nav-links {
+  width: 100%; /* Ensure it takes the full width */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .main-container {
@@ -63,4 +69,3 @@ a:hover {
     font-size: 2.5rem; /* Smaller heading size for mobile */
   }
 }
-
