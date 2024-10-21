@@ -18,7 +18,7 @@ const Header = () => {
             <li><a href="#skills" className="nav-item" onClick={toggleMenu}>Skills</a></li>
             <li><a href="#projects" className="nav-item" onClick={toggleMenu}>Projects</a></li>
             <li><a href="#achievements" className="nav-item" onClick={toggleMenu}>Achievements</a></li>
-            <li><a href="#contact" className="nav-item" onClick={toggleMenu}>Contact</a></li> {/* Updated link to point to #contact */}
+            <li><a href="#contact" className="nav-item" onClick={toggleMenu}>Contact</a></li>
           </ul>
         </div>
         <div className="hamburger" onClick={toggleMenu}>
