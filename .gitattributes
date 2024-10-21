@@ -1,0 +1,7 @@
+# For all text files
+* text=auto
+
+# For specific file types
+*.js text
+*.json text
+*.html text
